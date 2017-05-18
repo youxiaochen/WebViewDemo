@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <WebView android:id="@+id/mWebView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar android:id="@+id/mProgress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:progressDrawable="@drawable/bg_web_progressbar"
+                android:progress="0"
+                android:max="100"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#ff00ff"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="这里是非WebView区域"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
